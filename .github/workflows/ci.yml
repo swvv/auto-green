@@ -16,10 +16,10 @@ jobs:
 
       - name: Auto green
         run: |
-          git config --local user.email "justjavac@gmail.com"
-          git config --local user.name "迷渡"
+          git config --local user.email "m@imemm.com"
+          git config --local user.name "Scott"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          date +"%Y-%m-%d %H:%M:%S.%N" > keepchange.txt
-          git commit -am "a commit a day keeps your girlfriend away"
+          date +"%Y-%m-%d %H:%M:%S.%N" > log.txt
+          git commit -am "day day up"
           git push
